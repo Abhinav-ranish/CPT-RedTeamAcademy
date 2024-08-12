@@ -72,6 +72,8 @@ Techniques for exploiting vulnerabilities in Windows and Linux systems:
 - **Windows Exploitation**: Common attack vectors and methods for Windows environments.
 - **Linux Exploitation**: Targeting vulnerabilities in Linux systems.
 
+Example - Eternal Blue Exploitation
+
 ### 9. Windows and Linux Privilege Escalation
 
 Methods for escalating privileges on compromised systems:
