@@ -171,4 +171,4 @@ Feel free to reach out if you have any questions about the certification or requ
 
 ---
 
-Abhinav Ranish | aranish@asu.edu | Website(https://portfolio.aranish.codes) | Linkdln (https://www.linkedin.com/in/abhinavranish/)
+Abhinav Ranish | aranish@asu.edu | [Website](https://portfolio.aranish.codes) | Linkdln (https://www.linkedin.com/in/abhinavranish/)
