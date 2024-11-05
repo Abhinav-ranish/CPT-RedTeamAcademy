@@ -4,6 +4,8 @@
 
 I have successfully completed the Certified Penetration Tester course offered by Red Team Academy. This rigorous certification involved extensive training in various aspects of penetration testing and cybersecurity. The course covered a wide array of topics, each crucial for conducting effective security assessments and protecting systems against threats.
 
+Tools I used to learn cybersecurity & Ethical Hacking [Learning Resources README](Materials.md).
+
 ## Course Details
 
 - **Certification Name**: Certified Penetration Tester
