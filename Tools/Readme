@@ -1,4 +1,4 @@
-# Kali Linux Tools Cheat Sheet 🕵️‍♂️
+# Kali Linux Tools 
 
 This README provides a quick overview of some of the tools I used penetration testing, covering everything from network scanning to brute-forcing and cryptography. For more details on each tool, links to their respective documentation or download pages are provided.
 
@@ -112,7 +112,6 @@ This README provides a quick overview of some of the tools I used penetration te
 ### [tcpdump](https://www.tcpdump.org/)
 - **Description**: A command-line packet analyzer tool used to capture and inspect TCP/IP traffic.
 - **Example Usage**: `tcpdump -i eth0`
-
 
 
 ## 📚 Further Reading
